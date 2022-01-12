@@ -27,21 +27,27 @@
    width: 25%;
  /*  background-color: pink; */
    display: flex;
+   justify-content: space-evenly;
 
 }
 
 .ul-header{
-    display: flex;
-    list-style: none;
+    display: flex; 
+    list-style: none; 
     font-family: 'Roboto', sans-serif;
-    color:#766F68;
     font-weight: 900;
     font-size: 1.5em;
+
 }
 
-.li-header{
-    padding: 5%;
+.li-header a{
+    color:#766F68;
+    text-decoration: none;
+    padding-right: 20px;
+}
 
+.li-header a:hover{
+    color:	#4F4F4F;
 }
 
 .container-main{
@@ -90,18 +96,17 @@
 
 
 .button{
-    height: 80px;
-    width: 20%;
+    position: relative;
+    left: 10%;
+    bottom: 20px;
     background-color: #D2872C;
     color: white;
+    height: 80px;
+    width: 20%;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     font-weight: 900;
-    border: none;
     border-radius: 10px;
-    position: relative;
-    left: 10%;
-    bottom: 10%;
 } 
 
 .container-footer{
@@ -123,4 +128,38 @@
 .icon{
     height: 40px;
     width: 40px;
+}
+
+
+/*RESPONSIVO*/
+
+@media(max-width:1075px){
+
+  .button{
+    bottom: 0px;
+    top: 20px;
+    height: 60px;
+    width: 15%;
+    font-size: 1.3em;
+}
+
+  .li-header a{
+    padding-right: 10px;
+}
+
+  .nav-header{
+  /* background-color: pink; */
+   padding-right: 50px;
+   width: 30%;
+ }
+
+
+}
+
+@media(max-width:900px){
+
+    .nav-header{
+        display: none;
+       
+    }
 }
